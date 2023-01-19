@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Reverse a number</title>
+<script>
+   
+    var a = prompt("Enter a value");
+    var b, sum = 0;
+    var z = a;
+    while(a > 0)
+    {
+      b = a % 10;
+      sum = sum * 10 + b;
+      a = parseInt(a / 10);
+    }
+    alert("the reverse of the number is::"+(sum));
+</script>
+</head>
+<body>
+    <p><h2>Reverse of the number</h2></p>
+    </body>
+</html>

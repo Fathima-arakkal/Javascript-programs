@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Returns a passed string with letters in alphabetical order</title>
+<script>
+	function alphaOrder(str){
+         var arr = str.split("");
+         arr.sort();
+         var sortedStr = arr.join("");
+         return sortedStr
+      }
+      document.getElementById("result").innerHTML = alphaOrder("fathima")
+</script>
+</head>
+<body>
+   <div id="result"></div>
+   </body>
+</html>

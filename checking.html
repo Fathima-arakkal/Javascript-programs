@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+    <p>Is [1,2,3,4,5] an array?</p>
+    <button onclick="check([7,3,5,6,0,3,1,5,4])"> Check </button>
+    <p id="a1"></p>
+    <p>Is "Hello everyone" an array?</p>
+    <button onclick="check('Hi MCA')"> Check </button>
+    <script>
+    function check(arr)
+    {
+        if(Array.isArray(arr))
+            document.getElementById("a1").innerHTML="It is an array";
+        else
+            document.getElementById("a1").innerHTML="It is not an array";
+    }
+    
+    </script>
+</body>
+</html>
